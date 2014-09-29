@@ -1,0 +1,11 @@
+name             "<%= @cookbook_name %>"
+maintainer       "<%= @maintainer %>"
+maintainer_email "<%= @maintainer_email %>"
+license          "MIT"
+description      "<%= @cookbook_name %> - TODO: Fill in the details"
+long_description IO.read(File.join(File.dirname(__FILE__), "README.md"))
+version          "0.0.1"
+
+recipe "<%= @cookbook_name %>", "Default recipe - TODO: Fill in the details"
+
+suggests "minitest-handler"

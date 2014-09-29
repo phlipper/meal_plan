@@ -1,0 +1,11 @@
+require "spec_helper"
+
+describe "<%= @cookbook_name %>::default" do
+  let(:chef_run) do
+    ChefSpec::Runner.new.converge(described_recipe)
+  end
+
+  it "adds some test coverage" do
+    skip "need to get on that"
+  end
+end

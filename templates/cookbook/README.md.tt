@@ -1,0 +1,48 @@
+# <%= @cookbook_name %>
+
+## Description
+
+TODO: Fill in the details
+
+## Requirements
+
+### Supported Platforms
+
+The following platforms are supported by this cookbook, meaning that the recipes run on these platforms without error:
+
+* TODO: Fill in the details
+
+### Cookbooks
+
+* [minitest-handler](http://community.opscode.com/cookbooks/minitest-handler) _(suggested, not required)_
+
+
+## Recipes
+
+* `<%= @cookbook_name %>` - Default recipe - TODO: Fill in the details
+
+
+## Usage
+
+TODO: Fill in the details
+
+## Attributes
+
+TODO: Fill in the details
+
+
+## Contributing
+
+1. Fork it
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Added some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create new Pull Request
+
+
+## License
+
+**<%= @cookbook_name %>**
+
+* Freely distributable and licensed under the [MIT license](http://mit-license.org/<%= Time.now.year %>/license.html).
+* Copyright (c) <%= Time.now.year %> <%= @maintainer %> (<%= @maintainer_email %>)

@@ -1,0 +1,16 @@
+source "https://rubygems.org"
+
+chef_version = ENV.fetch("CHEF_VERSION", "11.16")
+
+gem "chef", "~> #{chef_version}"
+gem "chefspec", "~> 4.0" if chef_version >= "11"
+
+gem "berkshelf", "~> 3.1"
+gem "foodcritic", "~> 4.0"
+gem "rake"
+gem "rubocop", "~> 0.26"
+
+group :integration do
+  gem "guard-rspec", "~> 4.3"
+  gem "guard-rubocop", "~> 1.1"
+end
