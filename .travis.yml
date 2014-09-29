@@ -1,6 +1,9 @@
 language: ruby
 rvm:
-  - 2.1.2
+- 2.1.2
 script:
-  - bundle exec rake rubocop
-  - bundle exec rake rspec
+- bundle exec rake rubocop
+- bundle exec rake rspec
+env:
+  global:
+    secure: VMDrjHxuDz8PjiMiwWKV14W2dPWp8tPZl5AWzBe3eJ5qgJ+lP6ZxP/FxFtVNubSdZT1HLOycSgJd6s/LOSHJrYmQGtT2tZeqNjFAln+W0vMCR+OMX8KHxcP3oJ2UGpYQe0Gc7FAFzT26JhNuvcKDwEXNSN91a8MBneJLtWId2kw=
