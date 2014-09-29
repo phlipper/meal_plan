@@ -69,7 +69,8 @@ describe MealPlan::Cookbook do
 
     it "outputs a list of created files" do
       expect_any_instance_of(described_class).to receive(:run).with(
-        "bundle check || bundle install --path=.bundle --binstubs=.bundle/bin"
+        "test -d .bundle || " \
+        "bundle install --path=.bundle --binstubs=.bundle/bin"
       )
       expect_any_instance_of(described_class).to receive(:run).with(
         "berks install"
@@ -85,7 +86,7 @@ describe MealPlan::Cookbook do
 
     # rubocop:disable LineLength
     it "outputs a list of executed commands" do
-      expect(output).to match %(run  bundle check || bundle install --path=.bundle --binstubs=.bundle/bin from ".")
+      expect(output).to match %(run  test -d .bundle || bundle install --path=.bundle --binstubs=.bundle/bin from ".")
       expect(output).to match %(run  berks install from ".")
       expect(output).to match %(run  test -d .git || (git init && git add .) from ".")
     end

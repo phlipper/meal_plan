@@ -33,7 +33,8 @@ module MealPlan
   private
 
     def bundle_install
-      run "bundle check || bundle install --path=.bundle --binstubs=.bundle/bin"
+      run "test -d .bundle || " \
+          "bundle install --path=.bundle --binstubs=.bundle/bin"
     end
 
     def berks_install
