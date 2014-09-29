@@ -126,9 +126,10 @@ describe MealPlan::Cookbook do
         %(describe "test::default")
       )
 
-      expect(read_template "metadata.rb").to match "Joe Test"
-      expect(read_template "metadata.rb").to match "joe@test.com"
-      expect(read_template "metadata.rb").to match %(recipe "test")
+      metadata = read_template "metadata.rb"
+      expect(metadata).to match "Joe Test"
+      expect(metadata).to match "joe@test.com"
+      expect(metadata).to match %(recipe "test")
     end
   end
 
