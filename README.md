@@ -1,4 +1,8 @@
-# Meal Plan  [![Build Status](http://img.shields.io/travis-ci/phlipper/meal_plan.png)](https://travis-ci.org/phlipper/meal_plan)
+# Meal Plan
+
+[![Build Status](http://img.shields.io/travis-ci/phlipper/meal_plan.png)](https://travis-ci.org/phlipper/meal_plan)
+[![Code Climate](https://codeclimate.com/github/phlipper/meal_plan/badges/gpa.svg)](https://codeclimate.com/github/phlipper/meal_plan)
+[![Test Coverage](https://codeclimate.com/github/phlipper/meal_plan/badges/coverage.svg)](https://codeclimate.com/github/phlipper/meal_plan)
 
 _"A healthy, delicious way to prepare and enjoy your infrastructure development"_
 
