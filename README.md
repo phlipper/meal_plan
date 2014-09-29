@@ -1,4 +1,4 @@
-# Meal Plan
+# Meal Plan  [![Build Status](http://img.shields.io/travis-ci/phlipper/meal_plan.png)](https://travis-ci.org/phlipper/meal_plan)
 
 _"A healthy, delicious way to prepare and enjoy your infrastructure development"_
 
